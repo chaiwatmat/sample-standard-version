@@ -2,6 +2,14 @@
 
 ## standard version
 
+### update package.json version
+
+```sh
+npx json -I -f package.json -e "this.version='$(git describe --abbrev=0)'"
+```
+
+the script above will update version in package.json to latest tag
+
 ### prerelease
 
 ```sh
